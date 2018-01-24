@@ -11,7 +11,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class ReactNativeConfigPackage implements ReactPackage {
-    @Override
+    
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         return Arrays.<NativeModule>asList(
             new ReactNativeConfigModule(reactContext)
@@ -22,7 +22,6 @@ public class ReactNativeConfigPackage implements ReactPackage {
         return Collections.emptyList();		
     }
 
-    @Override
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
         return Collections.emptyList();
     }
